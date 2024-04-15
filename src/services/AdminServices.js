@@ -307,6 +307,7 @@ const AdminServices = {
   },
 
   loginAdmin: async (body) => {
+    console.log("datas from logins: ", body)
     return requests.post("/api/admin/login", body);
   },
 

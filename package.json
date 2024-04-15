@@ -86,7 +86,7 @@
     "prestart": "npm run tailwind:dev",
     "start": "react-scripts --openssl-legacy-provider start",
     "build": "react-scripts --openssl-legacy-provider build",
-    "prebuild": "npm run tailwind:build",
+    "prebuild": "set NODE_OPTIONS=--max-old-space-size=4096 && npm run tailwind:build",
     "analyze": "webpack-bundle-analyzer build/bundle-stats.json",
     "cz": "git-cz",
     "release": "release-it",
